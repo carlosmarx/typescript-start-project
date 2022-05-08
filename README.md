@@ -70,14 +70,16 @@
         }
     }
 
-### Add ts-node-dev to run server development with typescript:
+### Add ts-node-dev and dotenv to server development with typescript:
 
     yarn add -D ts-node-dev
+    yarn add dotenv
 
 ### Add to package.json:
 
-    "scrpit": {
-        "dev": "ts-node-dev ./src/server.ts"
+    "scripts": {
+        "dev": "ts-node-dev -r dotenv/config ./src/server.ts",
+        "build": "tsc"
     },
 
 ## Run:

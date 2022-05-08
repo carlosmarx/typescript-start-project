@@ -4,8 +4,10 @@
   "main": "index.js",
   "author": "Carlos Marx <carlosmarx27@gmail.com>",
   "license": "MIT",
-  "scrpit": {
-    "dev": "ts-node-dev ./src/server.ts"
+  "scripts": {
+    "dev": "ts-node-dev -r dotenv/config ./src/server.ts",
+    "build": "tsc",
+    "start": "node -r dotenv/config ./dist/server.js"
   },
   "devDependencies": {
     "@types/express": "^4.17.13",
@@ -24,6 +26,7 @@
     "typescript": "^4.6.4"
   },
   "dependencies": {
+    "dotenv": "^16.0.0",
     "express": "^4.18.1"
   }
 }
