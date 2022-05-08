@@ -69,3 +69,17 @@
             "prettier/prettier": "error"
         }
     }
+
+### Add ts-node-dev to run server development with typescript:
+
+    yarn add -D ts-node-dev
+
+### Add to package.json:
+
+    "scrpit": {
+        "dev": "ts-node-dev ./src/server.ts"
+    },
+
+## Run:
+
+    yarn dev
