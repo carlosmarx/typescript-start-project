@@ -17,3 +17,7 @@
     charset = utf-8
     trim_trailing_whitespace = false
     insert_final_newline = false
+
+## Instalar typescrip como dependência de desenvolviemnto
+
+-   yarn add -D typescript
