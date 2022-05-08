@@ -47,7 +47,7 @@
 
     yarn add prettier eslint-config-prettier eslint-plugin-prettier babel-eslint -D
 
-### cofigure eslint, put the content on .eslintrc.json:
+### configure eslint, put the content on .eslintrc.json:
 
     {
         "env": {
@@ -78,8 +78,9 @@
 ### Add to package.json:
 
     "scripts": {
-        "dev": "ts-node-dev -r dotenv/config ./src/server.ts",
-        "build": "tsc"
+         "dev": "ts-node-dev -r dotenv/config ./src/server.ts",
+        "build": "tsc",
+        "start": "node -r dotenv/config ./dist/server.js"
     },
 
 ## Run:
