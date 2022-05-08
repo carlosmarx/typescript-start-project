@@ -1,8 +1,8 @@
 ## Start the project
 
--   yarn init -y
+    yarn init -y
 
-## Criar arquivo .editorconfig contendo:
+## Create file .editorconfig with the content:
 
     # EditorConfig is awesome: https://EditorConfig.org
 
@@ -18,6 +18,28 @@
     trim_trailing_whitespace = false
     insert_final_newline = false
 
-## Instalar typescrip como dependência de desenvolviemnto
+## Install typescript with dependency of development, run:
 
--   yarn add -D typescript
+    yarn add -D typescript
+
+## Configure typescript, run:
+
+    yarn tsc --init
+
+## Content for file tsconfig.json:
+
+    {
+        "compilerOptions": {
+            "target": "es2020",
+            "module": "commonjs",
+            "allowJs": true,
+            "esModuleInterop": true,
+            "forceConsistentCasingInFileNames": true,
+            "skipLibCheck": true,
+            "outDir": "./dist"
+        }
+    }
+
+# Add Eslint, run:
+
+    yarn add -D eslint
