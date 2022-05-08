@@ -1,8 +1,8 @@
-## Start the project
+### Start the project
 
     yarn init -y
 
-## Create file .editorconfig with the content:
+### Create file .editorconfig with the content:
 
     # EditorConfig is awesome: https://EditorConfig.org
 
@@ -18,15 +18,13 @@
     trim_trailing_whitespace = false
     insert_final_newline = false
 
-## Install typescript with dependency of development, run:
+### Install typescript with dependency of development, run:
 
     yarn add -D typescript
 
-## Configure typescript, run:
-
     yarn tsc --init
 
-## Content for file tsconfig.json:
+### Content for file tsconfig.json:
 
     {
         "compilerOptions": {
@@ -40,6 +38,34 @@
         }
     }
 
-# Add Eslint, run:
+### Add Eslint, run and answer the questions:
 
     yarn add -D eslint
+    yarn eslint --init
+
+### Config eslint and prettier, run:
+
+    yarn add prettier eslint-config-prettier eslint-plugin-prettier babel-eslint -D
+
+### cofigure eslint, put the content on .eslintrc.json:
+
+    {
+        "env": {
+            "es2021": true,
+            "node": true
+        },
+        "extends": [
+            "standard", "prettier"
+        ],
+        "parser": "@typescript-eslint/parser",
+        "parserOptions": {
+            "ecmaVersion": "latest",
+            "sourceType": "module"
+        },
+        "plugins": [
+            "@typescript-eslint", "prettier"
+        ],
+        "rules": {
+            "prettier/prettier": "error"
+        }
+    }
